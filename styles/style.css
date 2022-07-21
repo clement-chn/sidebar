@@ -1,0 +1,137 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hide-sidebar {
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .sidebar {
+  height: 100vh;
+  width: 100%;
+  -webkit-box-shadow: 0 10px 10px grey;
+          box-shadow: 0 10px 10px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  main .sidebar {
+    width: 700px;
+  }
+}
+
+main .sidebar .top-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .sidebar .top-sidebar h1 {
+  margin-left: 15px;
+  font-size: 2rem;
+}
+
+main .sidebar .top-sidebar img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 15px;
+}
+
+main .sidebar .links {
+  list-style-type: none;
+}
+
+main .sidebar .links li {
+  padding: 15px;
+}
+
+main .sidebar .links li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+main .sidebar .links li a:hover {
+  color: #929292;
+}
+
+@media screen and (min-width: 768px) {
+  main .sidebar .links li a {
+    font-size: 1.5rem;
+  }
+}
+
+main .sidebar .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .sidebar .social-links img {
+  padding: 10px;
+}
+
+img {
+  width: 25px;
+  height: 25px;
+}
+
+.burger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.burger-container img {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.burger-container img:hover {
+  -webkit-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+}
+
+.close-btn:hover {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
